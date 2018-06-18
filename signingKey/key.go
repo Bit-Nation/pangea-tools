@@ -6,7 +6,7 @@ import (
 	"time"
 
 	scrypt "github.com/Bit-Nation/panthalassa/crypto/scrypt"
-	ed25519 "golang.org/x/crypto/ed25519"
+	ed25519 "gx/ipfs/QmaPHkZLbQQbvcyavn8q1GFHg6o6yeceyHFSJ3Pjf3p3TQ/go-crypto/ed25519"
 )
 
 type SingingKey struct {

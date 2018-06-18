@@ -12,14 +12,14 @@ import (
 	sk "github.com/Bit-Nation/pangea-tools/signingKey"
 	dapp "github.com/Bit-Nation/panthalassa/dapp"
 	pb "github.com/Bit-Nation/panthalassa/dapp/registry/pb"
-	lp2p "github.com/libp2p/go-libp2p"
-	net "github.com/libp2p/go-libp2p-net"
 	pui "github.com/manifoldco/promptui"
 	qrterminal "github.com/mdp/qrterminal"
-	ma "github.com/multiformats/go-multiaddr"
-	protoMc "github.com/multiformats/go-multicodec/protobuf"
 	fsw "github.com/radovskyb/watcher"
 	cli "github.com/urfave/cli"
+	protoMc "gx/ipfs/QmRDePEiL4Yupq5EkcK3L3ko3iMgYaqUdLu7xc1kqs7dnV/go-multicodec/protobuf"
+	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
+	lp2p "gx/ipfs/QmWsV6kzPaYGBDVyuUfWBvyQygEc9Qrv9vzo8vZ7X4mdLN/go-libp2p"
+	net "gx/ipfs/QmXoz9o2PT3tEzf7hicegwex5UgVP54n3k82K7jrWFyN86/go-libp2p-net"
 )
 
 func config(cfg *lp2p.Config) error {

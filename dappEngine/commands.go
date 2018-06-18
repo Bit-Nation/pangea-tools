@@ -6,9 +6,9 @@ import (
 
 	dapp "github.com/Bit-Nation/panthalassa/dapp"
 	reg "github.com/Bit-Nation/panthalassa/dapp/registry"
-	lp2p "github.com/libp2p/go-libp2p"
-	ma "github.com/multiformats/go-multiaddr"
 	cli "github.com/urfave/cli"
+	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
+	lp2p "gx/ipfs/QmWsV6kzPaYGBDVyuUfWBvyQygEc9Qrv9vzo8vZ7X4mdLN/go-libp2p"
 )
 
 var devServerAddr string
