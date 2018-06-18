@@ -1,0 +1,8 @@
+builds:
+  - binary: pangeatools
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
