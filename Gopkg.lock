@@ -9,12 +9,13 @@
     "dapp",
     "dapp/module",
     "dapp/module/logger",
+    "dapp/module/react",
     "dapp/module/uuidv4",
     "dapp/registry",
     "dapp/registry/pb"
   ]
-  revision = "d9d716c1f1bd2f68bbddc473c3ced4f06c8d4646"
-  version = "3.3.4"
+  revision = "169ca35f6441b5efafe9a95c32aa61393035a904"
+  version = "3.4.0"
 
 [[projects]]
   branch = "master"
@@ -51,17 +52,8 @@
   version = "v1.1.0"
 
 [[projects]]
-  name = "github.com/fd/go-nat"
-  packages = ["."]
-  revision = "bad65a492f32121a87197f4a085905c35e2a367e"
-  version = "v1.0.0"
-
-[[projects]]
   name = "github.com/gogo/protobuf"
-  packages = [
-    "io",
-    "proto"
-  ]
+  packages = ["proto"]
   revision = "1adfc126b41513cc696b209667c8656ea7aac67c"
   version = "v1.0.0"
 
@@ -79,32 +71,6 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/gxed/GoEndian"
-  packages = ["."]
-  revision = "0f5c6873267e5abf306ffcdfcfa4bf77517ef4a7"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/gxed/eventfd"
-  packages = ["."]
-  revision = "80a92cca79a8041496ccc9dd773fcb52a57ec6f9"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/huin/goupnp"
-  packages = [
-    ".",
-    "dcps/internetgateway1",
-    "dcps/internetgateway2",
-    "httpu",
-    "scpd",
-    "soap",
-    "ssdp"
-  ]
-  revision = "1395d1447324cbea88d249fbfcfd70ea878fdfca"
-
-[[projects]]
-  branch = "master"
   name = "github.com/ipfs/go-log"
   packages = [
     ".",
@@ -115,32 +81,9 @@
   revision = "5dc2060baaf8db344f31dafd852340b93811d03f"
 
 [[projects]]
-  name = "github.com/jackpal/gateway"
-  packages = ["."]
-  revision = "3e333950771011fed13be63e62b9f473c5e0d9bf"
-  version = "v1.0.4"
-
-[[projects]]
-  name = "github.com/jackpal/go-nat-pmp"
-  packages = ["."]
-  revision = "c9cfead9f2a36ddf3daa40ba269aa7f4bbba6b62"
-  version = "v1.0.1"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/jbenet/go-temp-err-catcher"
-  packages = ["."]
-  revision = "aac704a3f4f27190b4ccc05f303a4931fd1241ff"
-
-[[projects]]
   branch = "master"
   name = "github.com/jbenet/goprocess"
-  packages = [
-    ".",
-    "context",
-    "periodic",
-    "ratelimit"
-  ]
+  packages = ["."]
   revision = "b497e2f366b8624394fb2e89c10ab607bebdde0b"
 
 [[projects]]
@@ -151,54 +94,6 @@
     "tabwriter"
   ]
   revision = "720a0952cc2ac777afc295d9861263e2a4cf96a1"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-addr-util"
-  packages = ["."]
-  revision = "3a008c3cc5082119a398b26035e6ac44a74d93f6"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-conn-security"
-  packages = [
-    ".",
-    "insecure"
-  ]
-  revision = "4e9b511f4f9a6aeef5659909fe9ddf9ee34ab6b2"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-conn-security-multistream"
-  packages = ["."]
-  revision = "88cc698d9588c5d70840938dd523310b0ee8bf20"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-flow-metrics"
-  packages = ["."]
-  revision = "3b3bcfcf78f2dc0e85be13ef3c3adc64cc5a9347"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p"
-  packages = [
-    ".",
-    "config",
-    "p2p/host/basic",
-    "p2p/protocol/identify",
-    "p2p/protocol/identify/pb"
-  ]
-  revision = "7c22c117597ef41ad63fac29e6e81f8d1041cc78"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-circuit"
-  packages = [
-    ".",
-    "pb"
-  ]
-  revision = "7054cca8a16d8324be6be1410285aa4c4c9e40de"
 
 [[projects]]
   branch = "master"
@@ -220,30 +115,6 @@
   name = "github.com/libp2p/go-libp2p-interface-connmgr"
   packages = ["."]
   revision = "557c373b457edf3d2666d6bbd24efec9e4792afa"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-interface-pnet"
-  packages = ["."]
-  revision = "86e6fc84b906599eac696308369896ece0ced63b"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-loggables"
-  packages = ["."]
-  revision = "6ce2bbea380b481b0663c51b8969e0472590a5a3"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-metrics"
-  packages = ["."]
-  revision = "0d2c484aa7741e26eca0ea3da4957c8d3201de21"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-nat"
-  packages = ["."]
-  revision = "7f78ce78aee28412e6e45a4067e7450f216b6b13"
 
 [[projects]]
   branch = "master"
@@ -274,39 +145,6 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/libp2p/go-libp2p-secio"
-  packages = [
-    ".",
-    "pb"
-  ]
-  revision = "eb43d20a249fc44fa00daffb0f6f23b9911359e2"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-swarm"
-  packages = ["."]
-  revision = "f144edfca052079ba9a7e2b056a7d5077683911e"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-transport"
-  packages = ["."]
-  revision = "f942b8aa7047186518dc619644ed6dc838298000"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-libp2p-transport-upgrader"
-  packages = ["."]
-  revision = "9a9b918a26034e4cdf222ffe6e2f27f0b48da6f0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-maddr-filter"
-  packages = ["."]
-  revision = "42d77c66758d30044bc76ce97d99d26ae22ffb73"
-
-[[projects]]
-  branch = "master"
   name = "github.com/libp2p/go-msgio"
   packages = [
     ".",
@@ -316,43 +154,9 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/libp2p/go-reuseport"
-  packages = [
-    ".",
-    "poll",
-    "singlepoll"
-  ]
-  revision = "2b9dda1feae6520af5cbfd0f8175569e5da925c7"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-reuseport-transport"
-  packages = ["."]
-  revision = "43cb6ab3d2a1cfd6418ba2c7722d5d47dbbd5d18"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-sockaddr"
-  packages = ["net"]
-  revision = "3c898fbfff40e5933d76362819727708dae6da97"
-
-[[projects]]
-  branch = "master"
   name = "github.com/libp2p/go-stream-muxer"
   packages = ["."]
   revision = "9c6bd93eecbbab56630bb2688bb435d9fd1dfeb1"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-tcp-transport"
-  packages = ["."]
-  revision = "d2b392af160de8f6a2c9ee9f0bfe1f2f724b54c6"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/libp2p/go-ws-transport"
-  packages = ["."]
-  revision = "cff8bfc18ac9dddacb848b160d2f991a67846337"
 
 [[projects]]
   branch = "master"
@@ -415,12 +219,6 @@
   packages = ["."]
   revision = "b90678896b52c3e5a4c8176805c6facc3fe3eb82"
   version = "0.1.2"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/multiformats/go-multiaddr-dns"
-  packages = ["."]
-  revision = "4c36f46414bba59a19ffe5154841f76d4a55b780"
 
 [[projects]]
   branch = "master"
@@ -519,57 +317,14 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/whyrusleeping/go-multiplex"
-  packages = ["."]
-  revision = "efc13ba1d477b33bc316288f5d946fbad1afa8c2"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/whyrusleeping/go-notifier"
-  packages = ["."]
-  revision = "097c5d47330ff6a823f67e3515faa13566a62c6f"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/whyrusleeping/go-smux-multiplex"
-  packages = ["."]
-  revision = "6c9914bb78b80e4e5947a43d27781b8863e19062"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/whyrusleeping/go-smux-multistream"
-  packages = ["."]
-  revision = "c707bf3c25fa380b20b54907790efde288775938"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/whyrusleeping/go-smux-yamux"
-  packages = ["."]
-  revision = "eac25f3e2d47aae211e457e7664b52634c95eea8"
-
-[[projects]]
-  branch = "master"
   name = "github.com/whyrusleeping/mafmt"
   packages = ["."]
   revision = "794419fbc8492a4d5b7ba38b58c2bb47d9e37eaa"
 
 [[projects]]
   branch = "master"
-  name = "github.com/whyrusleeping/multiaddr-filter"
-  packages = ["."]
-  revision = "e903e4adabd70b78bc9293b6ee4f359afb3f9f59"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/whyrusleeping/yamux"
-  packages = ["."]
-  revision = "35d045d4429ecf19430a2b94efc590bc40f2f7af"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/crypto"
   packages = [
-    "blowfish",
     "ed25519",
     "ed25519/internal/edwards25519",
     "pbkdf2",
@@ -580,46 +335,14 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = [
-    "context",
-    "html",
-    "html/atom",
-    "html/charset"
-  ]
+  packages = ["context"]
   revision = "db08ff08e8622530d9ed3a0e8ac279f6d4c02196"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = [
-    "unix",
-    "windows"
-  ]
+  packages = ["unix"]
   revision = "6c888cc515d3ed83fc103cf1d84468aad274b0a7"
-
-[[projects]]
-  name = "golang.org/x/text"
-  packages = [
-    "encoding",
-    "encoding/charmap",
-    "encoding/htmlindex",
-    "encoding/internal",
-    "encoding/internal/identifier",
-    "encoding/japanese",
-    "encoding/korean",
-    "encoding/simplifiedchinese",
-    "encoding/traditionalchinese",
-    "encoding/unicode",
-    "internal/gen",
-    "internal/tag",
-    "internal/utf8internal",
-    "language",
-    "runes",
-    "transform",
-    "unicode/cldr"
-  ]
-  revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
-  version = "v0.3.0"
 
 [[projects]]
   name = "gopkg.in/sourcemap.v1"
@@ -633,6 +356,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "78884b35bcbbe7c1140ff0b14bda5ca1b173f33f21e4c2c1c18e0cec73905925"
+  inputs-digest = "ef47d39ee0ca36cd08dc0acdd2ea0c376b856d33ad3fc796296b733c5fdda28a"
   solver-name = "gps-cdcl"
   solver-version = 1
