@@ -79,6 +79,8 @@ var DAppStream = cli.Command{
 
 		h.SetStreamHandler("/dapp-development/0.0.0", func(stream net.Stream) {
 
+			fmt.Println("got stream")
+			
 			writer := bufio.NewWriter(stream)
 			reader := bufio.NewReader(stream)
 			protoEnc := protoMc.Multicodec(nil).Encoder(writer)
@@ -161,7 +163,7 @@ var DAppStream = cli.Command{
 
 			}()
 
-			w.Add("dapp_build.json")
+			w.Add(dAppFileName)
 			w.Start(time.Millisecond * 100)
 
 		})
