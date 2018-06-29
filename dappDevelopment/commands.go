@@ -20,6 +20,7 @@ import (
 	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
 	lp2p "gx/ipfs/QmWsV6kzPaYGBDVyuUfWBvyQygEc9Qrv9vzo8vZ7X4mdLN/go-libp2p"
 	net "gx/ipfs/QmXoz9o2PT3tEzf7hicegwex5UgVP54n3k82K7jrWFyN86/go-libp2p-net"
+	"io"
 )
 
 func config(cfg *lp2p.Config) error {
@@ -80,7 +81,7 @@ var DAppStream = cli.Command{
 		h.SetStreamHandler("/dapp-development/0.0.0", func(stream net.Stream) {
 
 			fmt.Println("got stream")
-			
+
 			writer := bufio.NewWriter(stream)
 			reader := bufio.NewReader(stream)
 			protoEnc := protoMc.Multicodec(nil).Encoder(writer)
@@ -155,6 +156,11 @@ var DAppStream = cli.Command{
 
 					msg := pb.Message{}
 					if err := protoDec.Decode(&msg); err != nil {
+						if err == io.EOF {
+							stream.Close()
+						}else {
+							stream.Reset()
+						}
 						fmt.Println(err)
 					}
 					fmt.Println(string(msg.Log))
