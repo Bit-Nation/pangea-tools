@@ -162,6 +162,7 @@ var DAppStream = cli.Command{
 							stream.Reset()
 						}
 						fmt.Println(err)
+						break
 					}
 					fmt.Println(string(msg.Log))
 
